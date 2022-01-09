@@ -1,11 +1,11 @@
-# @patterns/mediator
+# @dalokey/mediator
 Mediator design pattern
 
 ## Installation
-listed as an [npm](https://www.npmjs.com/package/@pattern/mediator) package, and can be installed by running:
+listed as an [npm](https://www.npmjs.com/package/@dalokey/mediator) package, and can be installed by running:
 
 ```bash
-npm i -S @patterns/mediator
+npm i -S @dalokey/mediator
 ```
 
 ## Summary
