@@ -1,5 +1,5 @@
 {
-  "name": "@patterns/mediator",
+  "name": "@dalokey/mediator",
   "version": "0.0.1",
   "description": "The Mediator",
   "main": ".lib/index.js",
@@ -19,7 +19,7 @@
     "intermediary",
     "controller"
   ],
-  "author": "Dalomo",
+  "author": "Dalokey",
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.3.0",
