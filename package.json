@@ -1,0 +1,35 @@
+{
+  "name": "@patterns/mediator",
+  "version": "0.0.1",
+  "description": "The Mediator",
+  "main": ".lib/index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "build": "npm run clear && tsc",
+    "clear": "npm run clean-types && npm run clean-lib",
+    "clean-types": "rimraf ./index.d.ts",
+    "clean-lib": "rimraf ./.lib",
+    "test": "ts-mocha tests/**/*.test.ts"
+  },
+  "keywords": [
+    "Mediator",
+    "design",
+    "pattern",
+    "patterns",
+    "intermediary",
+    "controller"
+  ],
+  "author": "Dalomo",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "eslint": "^8.6.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "ts-mocha": "^8.0.0"
+  }
+}
