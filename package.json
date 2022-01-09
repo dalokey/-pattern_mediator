@@ -1,6 +1,6 @@
 {
   "name": "@dalokey/mediator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The Mediator",
   "main": ".lib/index.js",
   "types": "./index.d.ts",

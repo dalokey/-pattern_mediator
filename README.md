@@ -74,12 +74,22 @@ class GetItemByIdQueryHandler implements IRequestHandler<GetCartItemQuery, Item>
 Now to make the request the following is used to call the `send(request)` method
 ```ts
 let id = 1;
-let item = Mediator.send(new GetCartItemQuery(id));
+try { // use try catch as the validate() method can throw error if false
+    let response = Mediator.send(new GetCartItemQuery(id));
+    console.log(response);
+} catch (e) {
+    // error handled here
+}
 ```
 
 The Mediator class can also be instantiated so it may be used as dependency injection (which is great when it comes to testing)
 ```ts
 let id = 1;
 const mediator = new Mediator();
-let item = mediator.send(new GetCartItemQuery(id));
+try {
+    let response = mediator.send(new GetCartItemQuery(id));
+    console.log(response);
+} catch (e) {
+    // error handled here
+}
 ```
