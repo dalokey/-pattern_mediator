@@ -22,7 +22,7 @@ To better understand the usage of this package, a use case scenario from a shopp
 A request has been made to return an item by it's id.
 
 First create the query class, which implements this package's `IRequest<TResponse>` interface.
-This calss is either a query or command, but for this example it is a query.
+This class is either a query or command, but for this example it is a query.
 ```ts
 class GetItemByIdQuery implements IRequest<string> {
     // note: the handler must be instantiated here
@@ -75,7 +75,7 @@ Now to make the request the following is used to call the `send(request)` method
 ```ts
 let id = 1;
 try { // use try catch as the validate() method can throw error if false
-    let response = Mediator.send(new GetCartItemQuery(id));
+    let response = Mediator.send(new GetItemByIdQuery(id));
     console.log(response);
 } catch (e) {
     // error handled here
@@ -87,7 +87,7 @@ The Mediator class can also be instantiated so it may be used as dependency inje
 let id = 1;
 const mediator = new Mediator();
 try {
-    let response = mediator.send(new GetCartItemQuery(id));
+    let response = mediator.send(new GetItemByIdQuery(id));
     console.log(response);
 } catch (e) {
     // error handled here
