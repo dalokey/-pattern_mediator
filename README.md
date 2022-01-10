@@ -24,7 +24,7 @@ A request has been made to return an item by it's id.
 First create the query class, which implements this package's `IRequest<TResponse>` interface.
 This class is either a query or command, but for this example it is a query.
 ```ts
-class GetItemByIdQuery implements IRequest<string> {
+class GetItemByIdQuery implements IRequest<Item> {
     // note: the handler must be instantiated here
     public handlerInstance = new GetItemByIdQueryHandler();
 
