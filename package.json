@@ -1,14 +1,14 @@
 {
   "name": "@dalokey/mediator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Mediator",
   "main": ".lib/index.js",
   "types": "./index.d.ts",
   "scripts": {
     "build": "npm run clear && tsc",
     "clear": "npm run clean-types && npm run clean-lib",
-    "clean-types": "rimraf ./index.d.ts",
-    "clean-lib": "rimraf ./.lib",
+    "clean-types": "npx rimraf ./index.d.ts",
+    "clean-lib": "npx rimraf ./.lib",
     "test": "ts-mocha tests/**/*.test.ts"
   },
   "keywords": [
